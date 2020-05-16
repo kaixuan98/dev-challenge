@@ -1,0 +1,27 @@
+$background-colour : #279AF1; 
+$wording-colour : #F7F7FF ; 
+
+*{
+    padding:0; 
+    margin:0;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 5% ; 
+}
+
+.label{
+    position: relative;
+    right: 30%;
+    
+
+}
+.btn{
+    color : $wording-colour ; 
+    background-color: $background-colour;
+    border: 0px ;
+     
+}
