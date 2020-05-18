@@ -1,4 +1,5 @@
-[{
+[
+    {
     "firstName": "Jerry" ,
     "lastName": "Terry" , 
     "date": "2020-05-16",
@@ -24,8 +25,9 @@
             "price" : "5.50"
         }],
     "commission": "10",
-},
-{
+    },
+
+    {
     "firstName": "Jerry" ,
     "lastName": "Terry" , 
     "date": "2020-05-17",
@@ -51,8 +53,8 @@
             "price" : "5.50"
         }],
     "commission": "10",
-},
-{
+    },
+    {
     "firstName": "Jerry" ,
     "lastName": "Terry" , 
     "date": "2020-05-18",
@@ -78,4 +80,59 @@
             "price" : "5.50"
         }],
     "commission": "10",
-}]
+    }
+    {
+    "firstName": "Jerry" ,
+    "lastName": "Terry" , 
+    "date": "2020-05-19",
+    "itemSold":  [
+        {
+            "title" : "Fresh Lemon Lemonade",
+            "quantity" : "3",
+            "price" : "1.50"
+        },
+        {
+            "title" : "Orange & Lemon Lemonade",
+            "quantity" : "2",
+            "price" : "2.00"
+        },
+        {
+            "title" : "Sugary Shocker ",
+            "quantity" : "1",
+            "price" : "3.00"
+        },
+        {
+            "title" : "Wild Whiskey Whack",
+            "quantity" : "0",
+            "price" : "5.50"
+        }],
+    "commission": "10",
+    }
+    {
+    "firstName": "Jerry" ,
+    "lastName": "Terry" , 
+    "date": "2020-05-20",
+    "itemSold":  [
+        {
+            "title" : "Fresh Lemon Lemonade",
+            "quantity" : "0",
+            "price" : "1.50"
+        },
+        {
+            "title" : "Orange & Lemon Lemonade",
+            "quantity" : "0",
+            "price" : "2.00"
+        },
+        {
+            "title" : "Sugary Shocker ",
+            "quantity" : "0",
+            "price" : "3.00"
+        },
+        {
+            "title" : "Wild Whiskey Whack",
+            "quantity" : "0",
+            "price" : "5.50"
+        }],
+    "commission": "10",
+    }
+]
