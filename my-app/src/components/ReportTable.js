@@ -1,45 +1,39 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table'
 
+// import Data from '../../src/salesData.json'
+
 
 
 class ReportTable extends React.Component {
     
-    
-    itemSoldList = this.props.itemSold.map(items =>{
-        title = items.title ; 
-        quantity = item.quantity;
-        price = item.price; 
-        
-    })
+    checkFirstName = () => {
+
+    }
+    checkLastName = () => {
+
+    }
+    // here will only get data that has more than that date and save it in an array 
+    checkStartDate =() => {
+
+    }
+    // here will only get data that has less than that date and save it in an array 
+    checkStartDate =() => {
+
+    }
+
 
     render(){
     return (
-        <Table responsive>
-                <div>
-                    <span>{this.props.firstName}</span>
-                    <span>{this.props.lastName}</span>
-                </div>
-        
-                <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Items Sold</th>
-                    <th>Total Price</th>
-                    <th>Commission Earned</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>{this.props.date}</td>
-                        <td></td>
-                    </tr>
-                  
-                    
-                    
-                    
-                </tbody>
-        </Table>
+        <div>
+    
+            {this.props.firstName}{this.props.lastName} 
+            <Table>
+                
+            
+            </Table>
+
+        </div>
     )
     
     }

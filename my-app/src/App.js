@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.scss';
 import StaffForm from './components/StaffForm.js';
-import { BrowserRouter as Router , Switch , Route} from 'react-router-dom'; 
+import { BrowserRouter as Router , Route} from 'react-router-dom'; 
+import Report from './components/Report';
 
 
 class App extends React.Component {
@@ -14,7 +15,7 @@ render(){
             <StaffForm />
           </Route>
           <Route path='/sales/report'>
-           
+            <Report />
           </Route>
         
         </div>
