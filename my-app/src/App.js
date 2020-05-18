@@ -1,19 +1,27 @@
 import React from 'react';
 import './App.scss';
 import StaffForm from './components/StaffForm.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { BrowserRouter as Router , Switch , Route} from 'react-router-dom'; 
 
 
 class App extends React.Component {
-
-
- 
+  
 render(){
   return (
-    <div className="App">
-      <StaffForm />
-    </div>
+      <Router>
+        <div className="App">
+          <Route path='/sales/form'>
+            <StaffForm />
+          </Route>
+          <Route path='/sales/report'>
+           
+          </Route>
+        
+        </div>
+      </Router>
+     
+    
+   
   );
 }
 }

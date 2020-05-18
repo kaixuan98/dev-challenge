@@ -1,5 +1,9 @@
 $background-colour : #279AF1; 
-$wording-colour : #F7F7FF ; 
+$wording-colour : #F7F7FF ;
+$max-width: 768px ; 
+$error-colour: #dc3434;
+$success-colour: green ; 
+ 
 
 *{
     padding:0; 
@@ -8,20 +12,26 @@ $wording-colour : #F7F7FF ;
 }
 
 form{
-    display: flex;
-    flex-direction: column;
     margin: 5% ; 
 }
 
-.label{
-    position: relative;
-    right: 30%;
-    
-
-}
 .btn{
     color : $wording-colour ; 
     background-color: $background-colour;
-    border: 0px ;
-     
+    border: 0px ;   
 }
+.error{
+    color : $error-colour;
+}
+
+.success{
+    color: $success-colour;
+}
+
+#submitButton{
+    width: 30% ; 
+    position: relative;
+    margin : auto; 
+}
+
+

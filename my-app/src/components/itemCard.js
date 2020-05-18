@@ -4,15 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button'
 
 class ItemCard extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            title :'',
-            quantity: 0 ,
-            price: '' ,
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+    //         title :'',
+    //         quantity: 0 ,
+    //         price: '' ,
             
-        };
-    }
+    //     };
+    // }
     handleClick(e){
         e.preventDefault(); 
 
