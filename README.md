@@ -4,7 +4,7 @@ MEGA Comfort dev challenge
 This is a React app. 
 
 How to deployed the app? 
-run `npm start `  on the app and go to specific URL which is `/sales/form` and `/sales/report` 
+Download the repository > `cd my-app` >run `npm start ` on the app and go to specific URL which is `/sales/form` and `/sales/report` 
 
 
 Details of each page 

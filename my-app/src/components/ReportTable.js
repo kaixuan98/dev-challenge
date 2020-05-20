@@ -29,43 +29,6 @@ class ReportTable extends React.Component {
         this.props.getTable(this.state.lastName);
     }
 
-    
-    
-    checkFirstName = () => {
-
-    }
-    checkLastName = () => {
-
-    }
-    // here will only get data that has more than that date and save it in an array 
-    checkStartDate =() => {
-
-    }
-    // here will only get data that has less than that date and save it in an array 
-    checkStartDate =() => {
-
-    }
-
-    // used to calculate Total per day 
-    calcTotalPerDay =()=>{
-
-    }
-    // calc Comission per Day
-    calcCommissionPerDay =()=>{
-
-    }
-    // calc total price 
-    calcTotal =()=>{
-
-    }
-
-    // calc total commisson
-    calcTotalCommission = ()=>{
-
-    }
-
-
-
     render(){
     return (
         <div>
