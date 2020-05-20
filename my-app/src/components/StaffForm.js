@@ -13,31 +13,32 @@ const defaultState = {
   comPercent : '',
   soldItem : '',
   Date:'',
-  quantity: 0 ,
   LemonadeInfo : [
     {
+      id: 1 ,
       title: "Fresh Lemon Lemonade",
       price: "$1.50",
       quantity : 0 
     },
     {
+      id: 2, 
       title: "Orange & Lemon Splash",
       price: "$2.00",
       quantity : 0 
     },
     {
+      id: 3 , 
       title: "Sugary Shocker",
       price: "$3.00",
       quantity : 0 
     },
     {
+      id: 4 ,
       title: "Wild Whiskey Whack",
       price: "$5.50" ,
       quantity : 0     
     }
   ],
-  firstnameError: '',
-  lastnameError:'',
   successMessage: '',
 
 }
@@ -51,7 +52,8 @@ class StaffForm extends React.Component{
     
     handleSubmit = (e) => {
         e.preventDefault();
-        
+        console.log(this.state);
+        this.setState(defaultState);
         
       }
 
@@ -91,6 +93,7 @@ class StaffForm extends React.Component{
 
     componentDidMount(){
         this.salesData = JSON.parse(localStorage.getItem('salesPerson'));
+        console.log(this.salesData);
         
     }
     componentWillUpdate(nextProps , nextState){
@@ -102,10 +105,10 @@ class StaffForm extends React.Component{
     render(){
         return(
           <Form >
-            <div class="success">{this.state.successMessage}</div>
+            <div className="success">{this.state.successMessage}</div>
           <Form.Row>
               <Form.Group as={Col} controlId="formGridFirstName">
-                <Form.Label class="label">First name</Form.Label>
+                <Form.Label className="label">First name</Form.Label>
                 <Form.Control type="text" 
                   placeholder="First name" 
                   name="firstName"
@@ -115,7 +118,7 @@ class StaffForm extends React.Component{
 
             
               <Form.Group as={Col} controlId="formGridLastName">
-                <Form.Label class="label">Last name</Form.Label>
+                <Form.Label className="label">Last name</Form.Label>
                 <Form.Control type="text" 
                   placeholder="Last name" 
                   name="lastName"
@@ -127,7 +130,7 @@ class StaffForm extends React.Component{
 
             <Form.Row>
               <Form.Group as={Col} controlId="rank">
-                <Form.Label class="label">Position </Form.Label>
+                <Form.Label className="label">Position </Form.Label>
                   <Form.Control as="select"
                   name="rank" 
                   value ={this.state.rank}
@@ -139,7 +142,7 @@ class StaffForm extends React.Component{
               </Form.Group>
              
               <Form.Group as={Col} controlId="comPercent">
-                <Form.Label class="label">Commission Percentage </Form.Label>
+                <Form.Label className="label">Commission Percentage </Form.Label>
                   <Form.Control as="select"
                   name="comPercent"
                   value={this.state.comPercent} 
@@ -154,7 +157,7 @@ class StaffForm extends React.Component{
               
 
               <Form.Group as={Col} controlId="formGridDate">
-                <Form.Label class="label"> Date of Sale </Form.Label>
+                <Form.Label className="label"> Date of Sale </Form.Label>
                 <Form.Control type="date" 
                   name="date"
                   value={this.state.date} 
@@ -165,7 +168,7 @@ class StaffForm extends React.Component{
                 
                   {this.state.LemonadeInfo.map(lemonade => {
                     return(
-                    <ItemCard title={lemonade.title} 
+                    <ItemCard key={lemonade.id}title={lemonade.title} 
                     price={lemonade.price} 
                     quantity={lemonade.quantity}
                     increament={this.increament} decreament={this.decreament}/>

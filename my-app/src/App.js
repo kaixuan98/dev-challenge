@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import StaffForm from './components/StaffForm.js';
 import { BrowserRouter as Router , Route} from 'react-router-dom'; 
-import Report from './components/Report';
+import Report from './components/report';
 
 
 class App extends React.Component {
