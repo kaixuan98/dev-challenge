@@ -30,13 +30,15 @@ The form consists of a few input :
 
 The form will submited to the local storage with a key call "salesPerson" and all of the data will be store it in json format 
 
+You will find the key value pair in the browser inspect > application > local storage 
+
 --------------------------------------------------------
 
 /sales/report --> this allow them to keep track of their sales and commission  
 
 This page consists of 2 part:    
 
-    A. a Key in form to set constraint search for a specfic report   
+    A. a Key in form to set constraint search for a specfic report  
 
     B. a table (report) will be render based on the constraint that the salesperson / manager key in   
 
