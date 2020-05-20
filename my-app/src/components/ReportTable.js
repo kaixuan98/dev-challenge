@@ -18,6 +18,16 @@ class ReportTable extends React.Component {
         }
        
     }
+    getName = (firstName , lastName) => {
+        salesData.map(items => {
+            this.setState({
+                firstName : items.firstName,
+                lastName : items.lastName
+            })
+        })
+        this.props.getTable(this.state.firstName);
+        this.props.getTable(this.state.lastName);
+    }
 
     
     
@@ -60,8 +70,8 @@ class ReportTable extends React.Component {
     return (
         <div>
             <div>
-                <span onSubmit={}>First Name</span> 
-                <span>Last Name</span> 
+                <span getName={this.getName.firstName}>First Name</span> 
+                <span getName={this.getName.lastName}>Last Name</span> 
             </div>
     
             <Table responsive>

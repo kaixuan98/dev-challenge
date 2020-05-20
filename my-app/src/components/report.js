@@ -13,6 +13,7 @@ class Report extends React.Component {
             lastName: '',
             startDate: '',
             endDate: '',
+            errorMessage : 'This is not the right person ',
     }}
     
     handleChange = (e)=> {
@@ -26,6 +27,17 @@ class Report extends React.Component {
         e.preventDefault();
         console.log(this.state);
     }
+
+    getName =(firstName , lastName) =>{
+          if (firstName === this.state.firstName ){
+            this.state.setState({
+                firstName : firstName , 
+            })
+          }
+          return this.state.errorMessage;
+        }
+        
+      
 
    
 
@@ -88,7 +100,8 @@ class Report extends React.Component {
 
                     <Button variant="primary"
                     onClick= {e => this.handleSubmit(e)}
-                    id="submitButton">Submit</Button>
+                    id="submitButton"
+                    getName={this.getName}>Submit</Button>
                                 
             </Form>
 
